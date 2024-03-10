@@ -1,0 +1,9 @@
+﻿<!-- OrderProducts.cshtml -->
+@model WebApplication1.Models.User
+
+<form method="post" asp-action="ConfirmOrder">
+    <label>Скільки одиниць товару ви бажаєте замовити?</label>
+    <input type="number" name="products[0].Quantity" required><br>
+    <button type="submit">Підтвердити</button>
+</form>
+

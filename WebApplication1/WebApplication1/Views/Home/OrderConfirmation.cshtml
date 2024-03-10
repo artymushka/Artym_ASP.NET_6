@@ -1,0 +1,10 @@
+﻿<!-- OrderConfirmation.cshtml -->
+@model List<WebApplication1.Models.Product>
+
+<h2>Інформація про замовлені товари</h2>
+
+@foreach (var product in Model)
+{
+    <p>@product.Name: @product.Quantity</p>
+}
+
